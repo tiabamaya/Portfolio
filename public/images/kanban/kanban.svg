@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800">
+  <rect width="1400" height="800" fill="#181818"></rect>
+
+  <text x="70" y="100" font-family="Arial" font-size="24" fill="#888">
+    FULL-STACK PRODUCTIVITY
+  </text>
+
+  <g fill="#303030">
+    <rect x="160" y="180" width="320" height="430" rx="16"></rect>
+    <rect x="540" y="180" width="320" height="430" rx="16"></rect>
+    <rect x="920" y="180" width="320" height="430" rx="16"></rect>
+  </g>
+
+  <g fill="#494949">
+    <rect x="200" y="260" width="240" height="90" rx="10"></rect>
+    <rect x="200" y="390" width="240" height="120" rx="10"></rect>
+
+    <rect x="580" y="260" width="240" height="130" rx="10"></rect>
+    <rect x="580" y="430" width="240" height="90" rx="10"></rect>
+
+    <rect x="960" y="260" width="240" height="110" rx="10"></rect>
+  </g>
+
+  <text x="70" y="740" font-family="Arial" font-size="72" font-weight="700" fill="#f3f2ed">
+    KANBAN TASK BOARD
+  </text>
+</svg>

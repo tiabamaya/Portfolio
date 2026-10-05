@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800">
+  <rect width="1400" height="800" fill="#f1f0ea"></rect>
+
+  <text x="70" y="100" font-family="Arial" font-size="24" fill="#777">
+    PERSONAL FINANCE APPLICATION
+  </text>
+
+  <rect x="170" y="160" width="1060" height="480" rx="20" fill="#fff" stroke="#cccac4"></rect>
+
+  <rect x="220" y="220" width="290" height="110" rx="12" fill="#e8e7e1"></rect>
+  <rect x="555" y="220" width="290" height="110" rx="12" fill="#e8e7e1"></rect>
+  <rect x="890" y="220" width="290" height="110" rx="12" fill="#e8e7e1"></rect>
+
+  <polyline points="250,560 350,510 450,530 550,450 650,480 750,390 850,420 960,330 1100,360" fill="none" stroke="#4f6ef7" stroke-width="8"></polyline>
+
+  <text x="70" y="740" font-family="Arial" font-size="72" font-weight="700" fill="#111">
+    BUDGET TRACKER
+  </text>
+</svg>
