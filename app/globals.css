@@ -2030,6 +2030,104 @@ display: flex;
   > .container {
     padding-bottom: 15px;
   }
+
+  .experience-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 35px;
+
+    width: 100%;
+    padding-bottom: 60px;
+  }
+
+  /* Date */
+
+  .experience-period {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .experience-period span {
+    font-size: 0.7rem;
+  }
+
+  .experience-period strong {
+    margin: 0;
+
+    font-size: clamp(2.2rem, 6vw, 3rem);
+    line-height: 1;
+  }
+
+  /* Company and job details */
+
+  .experience-details {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .experience-details > .eyebrow {
+    display: block;
+
+    margin: 0 0 20px;
+
+    font-size: 0.75rem;
+    line-height: 1.6;
+
+    white-space: normal;
+  }
+
+  /* Job title */
+
+  .experience-details h3 {
+    margin: 0 0 25px;
+
+    font-size: clamp(2.4rem, 8vw, 4.2rem);
+
+    font-weight: 500;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+
+    max-width: 100%;
+
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  /* Description */
+
+  .experience-intro {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 0 25px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* Responsibilities */
+
+  .experience-responsibility {
+    display: grid;
+
+    grid-template-columns:
+      40px minmax(0, 1fr);
+
+    gap: 12px 18px;
+  }
+
+  .experience-responsibility p {
+    grid-column: 2;
+
+    max-width: 100%;
+  }
+  
 }
 
 /* ========================================
@@ -2973,6 +3071,46 @@ display: flex;
   .footer-inner a {
     justify-self: start;
   }
+
+  .experience-main {
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+
+  .experience-period strong {
+    font-size: 2.2rem;
+  }
+
+  .experience-details > .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.03em;
+  }
+
+  .experience-details h3 {
+    font-size: clamp(2.15rem, 9vw, 2.9rem);
+
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+  .experience-intro {
+    font-size: 0.93rem;
+    line-height: 1.7;
+  }
+
+  .experience-responsibility {
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    padding: 24px 0;
+  }
+
+  .experience-responsibility p {
+    grid-column: auto;
+
+    font-size: 0.87rem;
+    line-height: 1.65;
+  }
 }
 
 @media (max-width: 390px) {
@@ -3174,5 +3312,211 @@ display: flex;
     transform:
       translateX(-50%)
       rotate(90deg);
+  }
+}
+
+/* Experience layout */
+
+.experience-main {
+  display: grid;
+
+  grid-template-columns:
+    minmax(150px, 230px)
+    minmax(0, 1fr);
+
+  gap: clamp(30px, 6vw, 100px);
+
+  align-items: start;
+
+  padding-bottom: 80px;
+}
+
+.experience-details {
+  min-width: 0;
+  max-width: 850px;
+}
+
+/* Company name */
+
+.experience-details > .eyebrow {
+  display: block;
+
+  margin: 0 0 20px;
+
+  font-family:
+    var(--font-geist-mono),
+    monospace;
+
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+
+  color: var(--muted);
+}
+
+/* Job title */
+
+.experience-details h3 {
+  margin: 0 0 30px;
+
+  font-size: clamp(
+    2.8rem,
+    5vw,
+    5.2rem
+  );
+
+  font-weight: 500;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+/* ========================================
+   EXPERIENCE — SMALL SCREEN FIX
+   600px and below
+======================================== */
+
+@media (max-width: 600px) {
+
+  /* Main layout */
+
+  #experience .experience-main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    width: 100%;
+    min-width: 0;
+
+    gap: 32px;
+
+    padding-bottom: 55px;
+  }
+
+  /* Date */
+
+  #experience .experience-period {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 6px;
+  }
+
+  #experience .experience-period span {
+    font-size: 0.68rem;
+  }
+
+  #experience .experience-period strong {
+    margin: 0;
+
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  /* Company and position */
+
+  #experience .experience-details {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #experience .experience-details > .eyebrow {
+    margin: 0 0 20px;
+
+    font-size: 0.7rem;
+    line-height: 1.6;
+
+    letter-spacing: 0.035em;
+
+    white-space: normal;
+  }
+
+  /* Job title */
+
+  #experience .experience-details h3 {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 0 24px;
+
+    font-size: clamp(
+      1.9rem,
+      8.5vw,
+      2.8rem
+    );
+
+    font-weight: 500;
+
+    line-height: 1;
+    letter-spacing: -0.055em;
+
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  /* Description */
+
+  #experience .experience-intro {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 0 26px;
+
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  /* Case study link */
+
+  #experience .experience-details .text-link {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;
+
+    white-space: nowrap;
+  }
+
+  #experience .experience-details .text-link svg {
+    flex-shrink: 0;
+  }
+
+  /* Responsibility rows */
+
+  #experience .experience-responsibility {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 10px;
+
+    padding: 24px 0;
+  }
+
+  #experience .experience-responsibility p {
+    grid-column: 1;
+
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 0.87rem;
+    line-height: 1.65;
   }
 }
